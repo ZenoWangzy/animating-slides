@@ -16,7 +16,7 @@ Sound sets the pace of a talk deck. It should be steady and quiet under the spea
   `cues: { 2: [[0.2, 'pop', 7], [0.4, 'count', 'tick', 3]] }` means: in step 2, play a pop at beat 0.2, then count ticks for 3 beats from beat 0.4.
 - A `count` cue follows an `outExpo` number over `len` beats. It ticks each time the number passes another eighth of the way, at least 120 ms apart. Use `'coin'` for money and `'tick'` for other numbers.
 - Leave idle loops silent. A floating character that clicks every second becomes noise within a minute.
-- Built-in sounds: `tap pop card whoosh riser stamp shimmer tick coin bubble strike clunk`. `tap pop card shimmer tick coin bubble` take a pitch in semitones as their argument, `whoosh` takes `true` for the darker version, and the rest take no argument. Peaks stay at or under 0.045. Leave out the compressor, because its makeup gain makes quiet sounds louder.
+- Built-in sounds: `tap pop card whoosh riser stamp shimmer tick coin bubble strike clunk scribble`. `tap pop card shimmer tick coin bubble` take a pitch in semitones as their argument, `whoosh` takes `true` for the darker version, and the rest take no argument. Peaks stay at or under 0.045. Leave out the compressor, because its makeup gain makes quiet sounds louder.
 - Every scene change plays `whoosh`, darker on dark scenes. A poke plays `tap`.
 
 ## Checking sound without listening

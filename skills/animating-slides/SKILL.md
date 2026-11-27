@@ -14,7 +14,8 @@ The engine, an example deck and the tools are in this skill's folder. Below, `<s
 - `scripts/qa.mjs` runs the overlap audit, takes a screenshot of every step and makes a live tour with real key presses.
 - `scripts/offline.sh` packs the deck into one zip for the venue PC.
 - `scripts/subset-font.py` embeds fonts.
-- `references/` holds the reference files that the phases below point to.
+- `examples/grokbot-talk/`: a whole 20-minute talk built on the same engine (10 scenes, 26 clicks). Read it when you plan a full talk; its README says which technique each scene shows.
+- `references/` holds the reference files that the phases below point to. [references/teardown-last-boring-slide.md](references/teardown-last-boring-slide.md) describes the techniques of the strongest animated talk we studied.
 
 Work in five phases. Each phase ends on something the speaker approves, so a wrong turn costs one phase, not the whole deck.
 

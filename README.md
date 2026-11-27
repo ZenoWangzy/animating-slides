@@ -52,13 +52,16 @@ node skills/animating-slides/scripts/qa.mjs skills/animating-slides/template --o
 
 Use the arrow keys, space or a click to step. N shows the speaker notes, M mutes, and F goes full screen. Click a character to poke it.
 
+For a whole talk, open `skills/animating-slides/examples/grokbot-talk/index.html`: the 20-minute meetup deck itself, 10 scenes and 26 clicks, with photos and the QR code replaced by placeholders.
+
 ## What's inside
 
 ```
 skills/animating-slides/
   SKILL.md                 the five phases: storyline, scene plan, build, QA, package
-  references/              engine API and gotchas, sound, talk craft
+  references/              engine API and gotchas, sound, talk craft, a teardown of The Last Boring Slide
   template/                engine.js + an example deck (4 scenes) + storyline.md
+  examples/grokbot-talk/   the full meetup talk (10 scenes) on the same engine
   scripts/
     check-storyline.py     every beat has Say, Point and a real Source
     qa.mjs                 overlap audit + screenshots of every step + key-press tour
@@ -71,6 +74,7 @@ Requirements: Chrome or Edge to present; Node 22+ and Chrome for `qa.mjs`; Pytho
 ## Credits
 
 - The skill packaging follows [frontend-slides](https://github.com/zarazhangrui/frontend-slides).
+- [The Last Boring Slide](https://claude.ai/artifact/Cy2d8Vn63CnzCtonA1LSah) set the bar for what an animated talk can be. It has no licence, so nothing from it is copied here; `references/teardown-last-boring-slide.md` describes its techniques in our own words.
 - The talk-craft notes draw on Chris Anderson, Nancy Duarte, and Chip and Dan Heath. Each is cited where it is used.
 
 ## License
@@ -84,5 +88,7 @@ Animating Slides 是一个给编码 agent 用的 skill，用来做**会动的演
 它来自一场真实的 20 分钟 meetup 分享的准备过程（[那份 deck](https://zenowangzy.github.io/grokbot-talk/)）。几轮反馈里发现的问题，现在都成了规则或检查：关掉声音就看不懂的页面、打开是黑屏的封面、像马达一样嗡嗡响的配乐、被图片挡住的字。现场电脑的配置事先不知道，所以还要做离线包。
 
 许可证：PolyForm Noncommercial 1.0.0。个人和非商业用途免费，包括自己上台演讲；商用（比如卖用它做的 deck，或者集成进收费产品）需要另外授权，请在 GitHub 上联系 ZenoWangzy。
+
+示例：`template/` 是 4 个小场景的入门例子；`examples/grokbot-talk/` 是那场 20 分钟分享的完整 deck（10 个场景，26 次点击），照片和二维码换成了占位图。`references/teardown-last-boring-slide.md` 用我们自己的话拆解了 The Last Boring Slide 的手法（它没有许可证，所以不拷贝任何代码和文字）。
 
 用法：装好之后让 agent 做一份演讲 slides。它按五个阶段走：故事线（每一拍写清讲稿、要点和出处）→ 场景方案（每个场景一个比喻加一张静帧，讲者点头再动手）→ 制作 → 检查（`qa.mjs`）→ 离线打包。

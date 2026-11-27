@@ -114,6 +114,7 @@
     bubble: (n = 0) => tone(NT(n - 14), .028, .1, { to: NT(n - 5) }),
     strike: () => noise(.026, .26, { f0: 1800, f1: 600, a: .02, q: 1.2 }),
     clunk: () => { tone(95, .035, .2, { to: 60 }); noise(.02, .1, { type: 'lowpass', f0: 420 }); },
+    scribble: () => { for (let i = 0; i < 14; i++) noise(.012, .05, { f0: 2400 + Math.random() * 1600, q: 3, at: i * .065 }); },
   };
   function sfx(name, arg) { logA('sfx', name); if (!actx || muted || !SFX[name]) return; SFX[name](arg); }
   // cues: { step: [[beat, sound, arg], [beat, 'count', sound, lengthInBeats]] }. Timers start from the step start;
