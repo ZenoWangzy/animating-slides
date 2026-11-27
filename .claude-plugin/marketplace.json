@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "animating-slides",
+  "description": "Talk decks that move: animated HTML slides with timed choreography, sound, QA and an offline package.",
+  "owner": {
+    "name": "ZenoWangzy",
+    "url": "https://github.com/ZenoWangzy"
+  },
+  "plugins": [
+    {
+      "name": "animating-slides",
+      "description": "Build animated talk decks: storyline first, timed scenes, music per act, overlap audit, offline zip.",
+      "source": "./",
+      "category": "productivity",
+      "tags": [
+        "presentations",
+        "slides",
+        "talk",
+        "animation",
+        "html"
+      ]
+    }
+  ]
+}

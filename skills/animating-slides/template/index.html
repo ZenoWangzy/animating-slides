@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Slides that move</title>
+<style>
+/* Fonts: the venue PC may not have yours. Embed them with scripts/subset-font.py, then add its @font-face lines here. */
+:root {
+  --display: "Avenir Next", "Segoe UI", system-ui, "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  --sans: "Avenir Next", "Segoe UI", system-ui, "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+#stage { position: absolute; left: 50%; top: 50%; width: 1920px; height: 1080px; overflow: hidden; transform-origin: 50% 50%; font-family: var(--sans); user-select: none; }
+#stage * { position: absolute; box-sizing: border-box; }
+#mark svg { width: 100%; height: 100%; }
+#notes { display: none; position: fixed; left: 0; right: 0; bottom: 0; padding: 14px 24px; background: rgba(10, 10, 12, .85); color: #eee; font: 18px/1.5 var(--sans); white-space: pre-line; z-index: 10; }
+#notes.on { display: block; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script src="engine.js"></script>
+<script src="scenes/parts.js"></script>
+<script src="scenes/cover.js"></script>
+<script src="scenes/count.js"></script>
+<script src="scenes/trio.js"></script>
+<script src="scenes/end.js"></script>
+<script src="deck.js"></script>
+</body>
+</html>

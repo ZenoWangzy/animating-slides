@@ -1,0 +1,21 @@
+{
+  "name": "animating-slides",
+  "version": "0.1.0",
+  "description": "Build animated talk decks: storyline first, timed scenes, music per act, overlap audit, offline zip.",
+  "skills": "./skills/",
+  "author": {
+    "name": "ZenoWangzy",
+    "url": "https://github.com/ZenoWangzy"
+  },
+  "homepage": "https://github.com/ZenoWangzy/animating-slides",
+  "repository": "https://github.com/ZenoWangzy/animating-slides",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "presentations",
+    "slides",
+    "talk",
+    "keynote",
+    "animation",
+    "html"
+  ]
+}
